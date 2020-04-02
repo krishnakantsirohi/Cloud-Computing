@@ -1,0 +1,214 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/10/27 01:29:25 INFO SparkContext: Running Spark version 1.5.2
+18/10/27 01:29:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/10/27 01:29:25 INFO SecurityManager: Changing view acls to: sirohi
+18/10/27 01:29:25 INFO SecurityManager: Changing modify acls to: sirohi
+18/10/27 01:29:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(sirohi); users with modify permissions: Set(sirohi)
+18/10/27 01:29:26 INFO Slf4jLogger: Slf4jLogger started
+18/10/27 01:29:26 INFO Remoting: Starting remoting
+18/10/27 01:29:26 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@198.202.118.34:36137]
+18/10/27 01:29:26 INFO Utils: Successfully started service 'sparkDriver' on port 36137.
+18/10/27 01:29:26 INFO SparkEnv: Registering MapOutputTracker
+18/10/27 01:29:26 INFO SparkEnv: Registering BlockManagerMaster
+18/10/27 01:29:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6b177c89-a908-427c-a42c-ddb0ee424590
+18/10/27 01:29:27 INFO MemoryStore: MemoryStore started with capacity 530.0 MB
+18/10/27 01:29:27 INFO HttpFileServer: HTTP File server directory is /tmp/spark-148ebc52-6c9c-4fa2-9a71-3ba9f86b5137/httpd-fcbefca4-ca42-4638-aa79-038191b931d8
+18/10/27 01:29:27 INFO HttpServer: Starting HTTP Server
+18/10/27 01:29:27 INFO Utils: Successfully started service 'HTTP file server' on port 33338.
+18/10/27 01:29:27 INFO SparkEnv: Registering OutputCommitCoordinator
+18/10/27 01:29:27 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/10/27 01:29:27 INFO SparkUI: Started SparkUI at http://198.202.118.34:4040
+18/10/27 01:29:27 INFO SparkContext: Added JAR file:/home/sirohi/project4/project4/kmeans.jar at http://198.202.118.34:33338/jars/kmeans.jar with timestamp 1540628967396
+18/10/27 01:29:27 WARN MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+18/10/27 01:29:27 INFO Executor: Starting executor ID driver on host localhost
+18/10/27 01:29:27 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45269.
+18/10/27 01:29:27 INFO NettyBlockTransferService: Server created on 45269
+18/10/27 01:29:27 INFO BlockManagerMaster: Trying to register BlockManager
+18/10/27 01:29:27 INFO BlockManagerMasterEndpoint: Registering block manager localhost:45269 with 530.0 MB RAM, BlockManagerId(driver, localhost, 45269)
+18/10/27 01:29:27 INFO BlockManagerMaster: Registered BlockManager
+18/10/27 01:29:28 INFO MemoryStore: ensureFreeSpace(120040) called with curMem=0, maxMem=555755765
+18/10/27 01:29:28 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.2 KB, free 529.9 MB)
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(12673) called with curMem=120040, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.4 KB, free 529.9 MB)
+18/10/27 01:29:29 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:45269 (size: 12.4 KB, free: 530.0 MB)
+18/10/27 01:29:29 INFO SparkContext: Created broadcast 0 from textFile at KMeans.scala:16
+18/10/27 01:29:29 INFO FileInputFormat: Total input paths to process : 1
+18/10/27 01:29:29 INFO SparkContext: Starting job: collect at KMeans.scala:16
+18/10/27 01:29:29 INFO DAGScheduler: Got job 0 (collect at KMeans.scala:16) with 2 output partitions
+18/10/27 01:29:29 INFO DAGScheduler: Final stage: ResultStage 0(collect at KMeans.scala:16)
+18/10/27 01:29:29 INFO DAGScheduler: Parents of final stage: List()
+18/10/27 01:29:29 INFO DAGScheduler: Missing parents: List()
+18/10/27 01:29:29 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at map at KMeans.scala:16), which has no missing parents
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(3224) called with curMem=132713, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.1 KB, free 529.9 MB)
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(1865) called with curMem=135937, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1865.0 B, free 529.9 MB)
+18/10/27 01:29:29 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:45269 (size: 1865.0 B, free: 530.0 MB)
+18/10/27 01:29:29 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:861
+18/10/27 01:29:29 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at map at KMeans.scala:16)
+18/10/27 01:29:29 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+18/10/27 01:29:29 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2211 bytes)
+18/10/27 01:29:29 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2211 bytes)
+18/10/27 01:29:29 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/10/27 01:29:29 INFO Executor: Fetching http://198.202.118.34:33338/jars/kmeans.jar with timestamp 1540628967396
+18/10/27 01:29:29 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+18/10/27 01:29:29 INFO Utils: Fetching http://198.202.118.34:33338/jars/kmeans.jar to /tmp/spark-148ebc52-6c9c-4fa2-9a71-3ba9f86b5137/userFiles-94e87c56-9de1-4661-b95f-7572448471eb/fetchFileTemp7789311333273974673.tmp
+18/10/27 01:29:29 INFO Executor: Adding file:/tmp/spark-148ebc52-6c9c-4fa2-9a71-3ba9f86b5137/userFiles-94e87c56-9de1-4661-b95f-7572448471eb/kmeans.jar to class loader
+18/10/27 01:29:29 INFO HadoopRDD: Input split: file:/home/sirohi/project4/project4/centroids.txt:450+450
+18/10/27 01:29:29 INFO HadoopRDD: Input split: file:/home/sirohi/project4/project4/centroids.txt:0+450
+18/10/27 01:29:29 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+18/10/27 01:29:29 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+18/10/27 01:29:29 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+18/10/27 01:29:29 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+18/10/27 01:29:29 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+18/10/27 01:29:29 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 3438 bytes result sent to driver
+18/10/27 01:29:29 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 3294 bytes result sent to driver
+18/10/27 01:29:29 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 233 ms on localhost (1/2)
+18/10/27 01:29:29 INFO DAGScheduler: ResultStage 0 (collect at KMeans.scala:16) finished in 0.241 s
+18/10/27 01:29:29 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 195 ms on localhost (2/2)
+18/10/27 01:29:29 INFO DAGScheduler: Job 0 finished: collect at KMeans.scala:16, took 0.341757 s
+18/10/27 01:29:29 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(57192) called with curMem=137802, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 55.9 KB, free 529.8 MB)
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(17179) called with curMem=194994, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 16.8 KB, free 529.8 MB)
+18/10/27 01:29:29 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:45269 (size: 16.8 KB, free: 530.0 MB)
+18/10/27 01:29:29 INFO SparkContext: Created broadcast 2 from textFile at KMeans.scala:17
+18/10/27 01:29:29 INFO FileInputFormat: Total input paths to process : 1
+18/10/27 01:29:29 INFO SparkContext: Starting job: collect at KMeans.scala:17
+18/10/27 01:29:29 INFO DAGScheduler: Got job 1 (collect at KMeans.scala:17) with 2 output partitions
+18/10/27 01:29:29 INFO DAGScheduler: Final stage: ResultStage 1(collect at KMeans.scala:17)
+18/10/27 01:29:29 INFO DAGScheduler: Parents of final stage: List()
+18/10/27 01:29:29 INFO DAGScheduler: Missing parents: List()
+18/10/27 01:29:29 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at map at KMeans.scala:17), which has no missing parents
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(3232) called with curMem=212173, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.2 KB, free 529.8 MB)
+18/10/27 01:29:29 INFO MemoryStore: ensureFreeSpace(1863) called with curMem=215405, maxMem=555755765
+18/10/27 01:29:29 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 1863.0 B, free 529.8 MB)
+18/10/27 01:29:29 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:45269 (size: 1863.0 B, free: 530.0 MB)
+18/10/27 01:29:29 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:861
+18/10/27 01:29:29 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at map at KMeans.scala:17)
+18/10/27 01:29:29 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+18/10/27 01:29:29 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, localhost, PROCESS_LOCAL, 2214 bytes)
+18/10/27 01:29:29 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, localhost, PROCESS_LOCAL, 2214 bytes)
+18/10/27 01:29:29 INFO Executor: Running task 0.0 in stage 1.0 (TID 2)
+18/10/27 01:29:29 INFO Executor: Running task 1.0 in stage 1.0 (TID 3)
+18/10/27 01:29:29 INFO HadoopRDD: Input split: file:/home/sirohi/project4/project4/points-small.txt:0+18474
+18/10/27 01:29:29 INFO HadoopRDD: Input split: file:/home/sirohi/project4/project4/points-small.txt:18474+18474
+18/10/27 01:29:29 INFO Executor: Finished task 1.0 in stage 1.0 (TID 3). 14216 bytes result sent to driver
+18/10/27 01:29:29 INFO Executor: Finished task 0.0 in stage 1.0 (TID 2). 14216 bytes result sent to driver
+18/10/27 01:29:29 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 98 ms on localhost (1/2)
+18/10/27 01:29:29 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 114 ms on localhost (2/2)
+18/10/27 01:29:29 INFO DAGScheduler: ResultStage 1 (collect at KMeans.scala:17) finished in 0.109 s
+18/10/27 01:29:29 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+18/10/27 01:29:29 INFO DAGScheduler: Job 1 finished: collect at KMeans.scala:17, took 0.121415 s
+(5.494007381973966,19.395287432453813)
+(11.565789152839638,15.492263851257922)
+(11.314612347510288,9.532555487511521)
+(15.418516840094476,15.473885495394038)
+(3.724210941409609,7.635447677839545)
+(17.449638052459488,17.570992561560235)
+(3.5295383078044393,1.4603864004807952)
+(13.645880564343168,9.550298361101952)
+(11.585852211801098,19.557488202153646)
+(9.526059947239563,15.51770141743311)
+(9.607193279857569,7.499760673946622)
+(19.513234834865926,9.527773458458016)
+(3.2932059910053813,3.6027514055595624)
+(5.466351573511209,15.38040370196049)
+(7.592245184448302,17.560004750042822)
+(5.3433803439785095,13.337906261662605)
+(11.66427773769761,3.5959075954620436)
+(17.41669914895143,19.409935497934253)
+(17.61150223845672,9.391536353654086)
+(13.47999696751019,15.518416627788909)
+(17.49620059389092,5.41346586392926)
+(15.62891137577731,3.486125203470371)
+(5.234603743426063,9.627355881912901)
+(17.57297456772642,15.507148476870164)
+(9.561102812590052,17.418028545195025)
+(5.700703769230111,17.559182234719124)
+(19.412900631239935,17.45382710254614)
+(19.40923463297856,19.623347525250594)
+(9.512609753970624,11.516494423827128)
+(17.344366106689733,13.504042794103777)
+(5.6042672412582695,1.367822030896835)
+(9.424771887917087,3.4510075799551623)
+(13.472541366973687,5.588865024099275)
+(19.42417116919443,13.495366332950761)
+(15.557488944586686,11.36329988566569)
+(7.493602074182509,13.540005635233847)
+(5.310176184940423,3.5856888398611564)
+(7.473465707728508,9.527236625702002)
+(9.434523363405205,1.5959424789373127)
+(11.415724345494002,11.202047135386776)
+(1.3713800405747953,1.3838420084482728)
+(19.51442242964429,15.470311442896694)
+(1.4605136897908426,15.551191828642892)
+(19.465513634723155,7.4886107486020475)
+(7.417149911519503,15.421833598207563)
+(3.5612855876355756,13.455447540293791)
+(17.419614783666,1.4763868763922958)
+(11.517284536054932,17.460850336902567)
+(1.414506954463833,7.462231461178868)
+(1.534350099101617,9.427621878096346)
+(13.374220026619048,19.466601329712063)
+(3.6469725239874053,11.513939163347377)
+(19.466892901603224,1.5583760512167482)
+(3.614243664359365,9.533587864198719)
+(15.464502195088825,13.520984591123822)
+(3.421152606382378,15.705742038142157)
+(13.520406174641,13.588340837724688)
+(15.44189826243805,17.37978240407272)
+(7.496623346068663,7.4962351600758526)
+(17.52337246960733,7.605315453109017)
+(15.48467564163502,9.471062807761296)
+(5.536713652503575,5.60409892089151)
+(1.585706750208671,19.479182612762195)
+(5.386919778686883,7.579927155353852)
+(13.418671430738755,17.355541407903296)
+(1.4214268238265082,13.65385991534782)
+(11.456249748288037,5.399921812381238)
+(15.449834657248928,19.48088104889714)
+(13.657993710377946,3.4873492614180983)
+(13.378916605824841,1.607969679895025)
+(17.394566167930165,11.524990545569418)
+(13.337475973934067,11.653972321069816)
+(1.6681393136801919,17.345128525400597)
+(11.471061934289873,7.533707718120387)
+(15.539260032097573,1.6402899134308284)
+(19.462432439585633,11.526593730283688)
+(3.5084275246957817,17.573459125799864)
+(9.567911241308785,5.499567136045219)
+(9.43533909421272,9.56278401861589)
+(11.684650434663173,1.4456018723237867)
+(19.403176106841798,3.568200773394429)
+(15.537119143192829,7.573048307342447)
+(13.521023266009905,7.5157092910968935)
+(1.6170078456564476,5.406261095670564)
+(17.37605438986158,3.367358434625505)
+(9.541668964580522,19.490760340550395)
+(1.5328427527943116,3.4350110994735537)
+(15.553864342358487,5.332949834572114)
+(19.445673909844572,5.400851850201909)
+(3.535421927003258,19.433644293195005)
+(7.418536851027672,11.563000770908088)
+(9.559452530427794,13.542181968156077)
+(3.4255552029818,5.552759549340505)
+(7.514045239681713,1.4426580581677813)
+(1.410986959543236,11.528621560445194)
+(5.575714848850136,11.47780590987567)
+(11.612257816266107,13.431677048838225)
+(7.471771200662084,19.510789472693276)
+(7.404644349482735,3.3238275829253645)
+(7.551997407764198,5.516385320890586)
+18/10/27 01:29:30 INFO SparkUI: Stopped Spark web UI at http://198.202.118.34:4040
+18/10/27 01:29:30 INFO DAGScheduler: Stopping DAGScheduler
+18/10/27 01:29:30 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/10/27 01:29:30 INFO MemoryStore: MemoryStore cleared
+18/10/27 01:29:30 INFO BlockManager: BlockManager stopped
+18/10/27 01:29:30 INFO BlockManagerMaster: BlockManagerMaster stopped
+18/10/27 01:29:30 INFO SparkContext: Successfully stopped SparkContext
+18/10/27 01:29:30 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/10/27 01:29:30 INFO ShutdownHookManager: Shutdown hook called
+18/10/27 01:29:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-148ebc52-6c9c-4fa2-9a71-3ba9f86b5137

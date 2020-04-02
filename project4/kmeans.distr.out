@@ -1,0 +1,529 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/sirohi/19839730
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/sirohi/cometcluster...
+myHadoop: Backing up old config dir to /home/sirohi/cometcluster.12...
+`/home/sirohi/cometcluster' -> `/home/sirohi/cometcluster.12'
+myHadoop: Designating comet-06-57.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-06-57.ibnet
+comet-06-60.ibnet
+comet-06-67.ibnet
+18/10/27 01:29:26 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-06-57.sdsc.edu/198.202.112.119
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/sirohi/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+18/10/27 01:29:26 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+18/10/27 01:29:26 INFO namenode.NameNode: createNameNode [-format]
+18/10/27 01:29:26 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/10/27 01:29:26 WARN common.Util: Path /scratch/sirohi/19839730/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+18/10/27 01:29:26 WARN common.Util: Path /scratch/sirohi/19839730/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-fa769b90-d236-4260-b7c9-c69612dcb590
+18/10/27 01:29:26 INFO namenode.FSNamesystem: No KeyProvider found.
+18/10/27 01:29:26 INFO namenode.FSNamesystem: fsLock is fair:true
+18/10/27 01:29:26 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+18/10/27 01:29:26 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: The block deletion will start around 2018 Oct 27 01:29:26
+18/10/27 01:29:26 INFO util.GSet: Computing capacity for map BlocksMap
+18/10/27 01:29:26 INFO util.GSet: VM type       = 64-bit
+18/10/27 01:29:26 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB
+18/10/27 01:29:26 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: defaultReplication         = 3
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: maxReplication             = 512
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: minReplication             = 1
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+18/10/27 01:29:26 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+18/10/27 01:29:26 INFO namenode.FSNamesystem: fsOwner             = sirohi (auth:SIMPLE)
+18/10/27 01:29:26 INFO namenode.FSNamesystem: supergroup          = supergroup
+18/10/27 01:29:26 INFO namenode.FSNamesystem: isPermissionEnabled = true
+18/10/27 01:29:26 INFO namenode.FSNamesystem: HA Enabled: false
+18/10/27 01:29:26 INFO namenode.FSNamesystem: Append Enabled: true
+18/10/27 01:29:27 INFO util.GSet: Computing capacity for map INodeMap
+18/10/27 01:29:27 INFO util.GSet: VM type       = 64-bit
+18/10/27 01:29:27 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB
+18/10/27 01:29:27 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+18/10/27 01:29:27 INFO namenode.NameNode: Caching file names occuring more than 10 times
+18/10/27 01:29:27 INFO util.GSet: Computing capacity for map cachedBlocks
+18/10/27 01:29:27 INFO util.GSet: VM type       = 64-bit
+18/10/27 01:29:27 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB
+18/10/27 01:29:27 INFO util.GSet: capacity      = 2^18 = 262144 entries
+18/10/27 01:29:27 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+18/10/27 01:29:27 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+18/10/27 01:29:27 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+18/10/27 01:29:27 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+18/10/27 01:29:27 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+18/10/27 01:29:27 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+18/10/27 01:29:27 INFO util.GSet: VM type       = 64-bit
+18/10/27 01:29:27 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 294.5 KB
+18/10/27 01:29:27 INFO util.GSet: capacity      = 2^15 = 32768 entries
+18/10/27 01:29:27 INFO namenode.NNConf: ACLs enabled? false
+18/10/27 01:29:27 INFO namenode.NNConf: XAttrs enabled? true
+18/10/27 01:29:27 INFO namenode.NNConf: Maximum size of an xattr: 16384
+18/10/27 01:29:27 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1130663705-198.202.112.119-1540628967148
+18/10/27 01:29:27 INFO common.Storage: Storage directory /scratch/sirohi/19839730/namenode_data has been successfully formatted.
+18/10/27 01:29:27 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+18/10/27 01:29:27 INFO util.ExitUtil: Exiting with status 0
+18/10/27 01:29:27 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-06-57.sdsc.edu/198.202.112.119
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/sirohi/cometcluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/sirohi/cometcluster/spark/spark-env.sh
+  myspark start
+18/10/27 01:29:27 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [comet-06-57.ibnet]
+comet-06-57.ibnet: starting namenode, logging to /scratch/sirohi/19839730/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.out
+comet-06-57.ibnet: starting datanode, logging to /scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.out
+comet-06-60.ibnet: starting datanode, logging to /scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-60.sdsc.edu.out
+comet-06-67.ibnet: starting datanode, logging to /scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-67.sdsc.edu.out
+Starting secondary namenodes [comet-06-57.ibnet]
+comet-06-57.ibnet: starting secondarynamenode, logging to /scratch/sirohi/19839730/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.out
+18/10/27 01:29:44 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/sirohi/19839730/logs/yarn-sirohi-resourcemanager-comet-06-57.out
+comet-06-57.ibnet: starting nodemanager, logging to /scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.out
+comet-06-60.ibnet: starting nodemanager, logging to /scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-60.sdsc.edu.out
+comet-06-67.ibnet: starting nodemanager, logging to /scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-67.sdsc.edu.out
+mySpark: Using /home/sirohi/cometcluster/spark/slaves as our slaves file
+mySpark: Reading in /home/sirohi/cometcluster/spark/spark-env.sh as our slaves file
+starting org.apache.spark.deploy.master.Master, logging to /scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.master.Master-1-comet-06-57.out
+mySpark: Starting worker on comet-06-57.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sirohi/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-06-57.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-57.sdsc.edu.out
+mySpark: Starting worker on comet-06-60.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sirohi/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-06-57.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-60.sdsc.edu.out
+mySpark: Starting worker on comet-06-67.ibnet:
+  /opt/spark/1.5.2/sbin/spark-daemon.sh --config /home/sirohi/cometcluster/spark start org.apache.spark.deploy.worker.Worker 1 spark://comet-06-57.ibnet:7077
+starting org.apache.spark.deploy.worker.Worker, logging to /scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-67.sdsc.edu.out
+18/10/27 01:29:57 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/10/27 01:29:58 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/10/27 01:30:00 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/10/27 01:30:02 INFO spark.SparkContext: Running Spark version 1.5.2
+18/10/27 01:30:02 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/10/27 01:30:02 INFO spark.SecurityManager: Changing view acls to: sirohi
+18/10/27 01:30:02 INFO spark.SecurityManager: Changing modify acls to: sirohi
+18/10/27 01:30:02 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(sirohi); users with modify permissions: Set(sirohi)
+18/10/27 01:30:02 INFO slf4j.Slf4jLogger: Slf4jLogger started
+18/10/27 01:30:02 INFO Remoting: Starting remoting
+18/10/27 01:30:03 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.22.254.94:37718]
+18/10/27 01:30:03 INFO util.Utils: Successfully started service 'sparkDriver' on port 37718.
+18/10/27 01:30:03 INFO spark.SparkEnv: Registering MapOutputTracker
+18/10/27 01:30:03 INFO spark.SparkEnv: Registering BlockManagerMaster
+18/10/27 01:30:03 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-24f254d3-9dc1-4e46-8dc2-6485e90f1160
+18/10/27 01:30:03 INFO storage.MemoryStore: MemoryStore started with capacity 530.0 MB
+18/10/27 01:30:03 INFO spark.HttpFileServer: HTTP File server directory is /tmp/spark-5fbfa222-50af-4c0e-ad88-ec371496f3e0/httpd-a5c24075-2302-4210-ae3c-e081107ccbdc
+18/10/27 01:30:03 INFO spark.HttpServer: Starting HTTP Server
+18/10/27 01:30:03 INFO server.Server: jetty-8.y.z-SNAPSHOT
+18/10/27 01:30:03 INFO server.AbstractConnector: Started SocketConnector@0.0.0.0:43591
+18/10/27 01:30:03 INFO util.Utils: Successfully started service 'HTTP file server' on port 43591.
+18/10/27 01:30:03 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+18/10/27 01:30:03 INFO server.Server: jetty-8.y.z-SNAPSHOT
+18/10/27 01:30:03 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+18/10/27 01:30:03 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+18/10/27 01:30:03 INFO ui.SparkUI: Started SparkUI at http://10.22.254.94:4040
+18/10/27 01:30:03 INFO spark.SparkContext: Added JAR file:/home/sirohi/project4/project4/kmeans.jar at http://10.22.254.94:43591/jars/kmeans.jar with timestamp 1540629003290
+18/10/27 01:30:03 WARN metrics.MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Connecting to master spark://comet-06-57.ibnet:7077...
+18/10/27 01:30:03 INFO cluster.SparkDeploySchedulerBackend: Connected to Spark cluster with app ID app-20181027013003-0000
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor added: app-20181027013003-0000/0 on worker-20181027012953-10.22.254.91-34729 (10.22.254.91:34729) with 24 cores
+18/10/27 01:30:03 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20181027013003-0000/0 on hostPort 10.22.254.91:34729 with 24 cores, 1024.0 MB RAM
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor added: app-20181027013003-0000/1 on worker-20181027012951-10.22.254.94-35787 (10.22.254.94:35787) with 24 cores
+18/10/27 01:30:03 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20181027013003-0000/1 on hostPort 10.22.254.94:35787 with 24 cores, 1024.0 MB RAM
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor added: app-20181027013003-0000/2 on worker-20181027012956-10.22.254.84-44050 (10.22.254.84:44050) with 24 cores
+18/10/27 01:30:03 INFO cluster.SparkDeploySchedulerBackend: Granted executor ID app-20181027013003-0000/2 on hostPort 10.22.254.84:44050 with 24 cores, 1024.0 MB RAM
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor updated: app-20181027013003-0000/1 is now LOADING
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor updated: app-20181027013003-0000/0 is now RUNNING
+18/10/27 01:30:03 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37698.
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor updated: app-20181027013003-0000/1 is now RUNNING
+18/10/27 01:30:03 INFO netty.NettyBlockTransferService: Server created on 37698
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor updated: app-20181027013003-0000/0 is now LOADING
+18/10/27 01:30:03 INFO storage.BlockManagerMaster: Trying to register BlockManager
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor updated: app-20181027013003-0000/2 is now RUNNING
+18/10/27 01:30:03 INFO client.AppClient$ClientEndpoint: Executor updated: app-20181027013003-0000/2 is now LOADING
+18/10/27 01:30:03 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.254.94:37698 with 530.0 MB RAM, BlockManagerId(driver, 10.22.254.94, 37698)
+18/10/27 01:30:03 INFO storage.BlockManagerMaster: Registered BlockManager
+18/10/27 01:30:03 INFO cluster.SparkDeploySchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+18/10/27 01:30:04 INFO storage.MemoryStore: ensureFreeSpace(120176) called with curMem=0, maxMem=555755765
+18/10/27 01:30:04 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 117.4 KB, free 529.9 MB)
+18/10/27 01:30:04 INFO storage.MemoryStore: ensureFreeSpace(12894) called with curMem=120176, maxMem=555755765
+18/10/27 01:30:04 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 12.6 KB, free 529.9 MB)
+18/10/27 01:30:04 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.254.94:37698 (size: 12.6 KB, free: 530.0 MB)
+18/10/27 01:30:04 INFO spark.SparkContext: Created broadcast 0 from textFile at KMeans.scala:16
+18/10/27 01:30:04 INFO mapred.FileInputFormat: Total input paths to process : 1
+18/10/27 01:30:04 INFO spark.SparkContext: Starting job: collect at KMeans.scala:16
+18/10/27 01:30:04 INFO scheduler.DAGScheduler: Got job 0 (collect at KMeans.scala:16) with 2 output partitions
+18/10/27 01:30:04 INFO scheduler.DAGScheduler: Final stage: ResultStage 0(collect at KMeans.scala:16)
+18/10/27 01:30:04 INFO scheduler.DAGScheduler: Parents of final stage: List()
+18/10/27 01:30:04 INFO scheduler.DAGScheduler: Missing parents: List()
+18/10/27 01:30:04 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at map at KMeans.scala:16), which has no missing parents
+18/10/27 01:30:04 INFO storage.MemoryStore: ensureFreeSpace(3240) called with curMem=133070, maxMem=555755765
+18/10/27 01:30:04 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.2 KB, free 529.9 MB)
+18/10/27 01:30:04 INFO storage.MemoryStore: ensureFreeSpace(1882) called with curMem=136310, maxMem=555755765
+18/10/27 01:30:04 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1882.0 B, free 529.9 MB)
+18/10/27 01:30:04 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.254.94:37698 (size: 1882.0 B, free: 530.0 MB)
+18/10/27 01:30:04 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:861
+18/10/27 01:30:04 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at map at KMeans.scala:16)
+18/10/27 01:30:04 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+18/10/27 01:30:05 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.254.91:46160/user/Executor#-2056790812]) with ID 0
+18/10/27 01:30:05 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 10.22.254.91, ANY, 2216 bytes)
+18/10/27 01:30:05 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, 10.22.254.91, ANY, 2216 bytes)
+18/10/27 01:30:05 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.254.94:36073/user/Executor#-742806140]) with ID 1
+18/10/27 01:30:05 INFO cluster.SparkDeploySchedulerBackend: Registered executor: AkkaRpcEndpointRef(Actor[akka.tcp://sparkExecutor@10.22.254.84:41621/user/Executor#1593159461]) with ID 2
+18/10/27 01:30:05 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.254.91:36873 with 530.0 MB RAM, BlockManagerId(0, 10.22.254.91, 36873)
+18/10/27 01:30:05 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.254.94:46408 with 530.0 MB RAM, BlockManagerId(1, 10.22.254.94, 46408)
+18/10/27 01:30:05 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.22.254.84:43830 with 530.0 MB RAM, BlockManagerId(2, 10.22.254.84, 43830)
+18/10/27 01:30:05 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.22.254.91:36873 (size: 1882.0 B, free: 530.0 MB)
+18/10/27 01:30:05 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.22.254.91:36873 (size: 12.6 KB, free: 530.0 MB)
+18/10/27 01:30:06 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 936 ms on 10.22.254.91 (1/2)
+18/10/27 01:30:06 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 925 ms on 10.22.254.91 (2/2)
+18/10/27 01:30:06 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: ResultStage 0 (collect at KMeans.scala:16) finished in 1.582 s
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Job 0 finished: collect at KMeans.scala:16, took 1.627689 s
+18/10/27 01:30:06 INFO storage.MemoryStore: ensureFreeSpace(57192) called with curMem=138192, maxMem=555755765
+18/10/27 01:30:06 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 55.9 KB, free 529.8 MB)
+18/10/27 01:30:06 INFO storage.MemoryStore: ensureFreeSpace(17451) called with curMem=195384, maxMem=555755765
+18/10/27 01:30:06 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 17.0 KB, free 529.8 MB)
+18/10/27 01:30:06 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.254.94:37698 (size: 17.0 KB, free: 530.0 MB)
+18/10/27 01:30:06 INFO spark.SparkContext: Created broadcast 2 from textFile at KMeans.scala:17
+18/10/27 01:30:06 INFO mapred.FileInputFormat: Total input paths to process : 1
+18/10/27 01:30:06 INFO spark.SparkContext: Starting job: collect at KMeans.scala:17
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Got job 1 (collect at KMeans.scala:17) with 2 output partitions
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Final stage: ResultStage 1(collect at KMeans.scala:17)
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Parents of final stage: List()
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Missing parents: List()
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at map at KMeans.scala:17), which has no missing parents
+18/10/27 01:30:06 INFO storage.MemoryStore: ensureFreeSpace(3240) called with curMem=212835, maxMem=555755765
+18/10/27 01:30:06 INFO storage.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.2 KB, free 529.8 MB)
+18/10/27 01:30:06 INFO storage.MemoryStore: ensureFreeSpace(1876) called with curMem=216075, maxMem=555755765
+18/10/27 01:30:06 INFO storage.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 1876.0 B, free 529.8 MB)
+18/10/27 01:30:06 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.22.254.94:37698 (size: 1876.0 B, free: 530.0 MB)
+18/10/27 01:30:06 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:861
+18/10/27 01:30:06 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at map at KMeans.scala:17)
+18/10/27 01:30:06 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+18/10/27 01:30:06 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, 10.22.254.84, ANY, 2219 bytes)
+18/10/27 01:30:06 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, 10.22.254.91, ANY, 2219 bytes)
+18/10/27 01:30:06 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.22.254.91:36873 (size: 1876.0 B, free: 530.0 MB)
+18/10/27 01:30:06 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.254.91:36873 (size: 17.0 KB, free: 530.0 MB)
+18/10/27 01:30:06 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 10.22.254.84:43830 (size: 1876.0 B, free: 530.0 MB)
+18/10/27 01:30:06 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.22.254.84:43830 (size: 17.0 KB, free: 530.0 MB)
+18/10/27 01:30:07 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.22.254.94:37698 in memory (size: 1882.0 B, free: 530.0 MB)
+18/10/27 01:30:07 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.22.254.91:36873 in memory (size: 1882.0 B, free: 530.0 MB)
+18/10/27 01:30:07 INFO spark.ContextCleaner: Cleaned accumulator 1
+18/10/27 01:30:07 INFO storage.BlockManagerInfo: Removed broadcast_0_piece0 on 10.22.254.94:37698 in memory (size: 12.6 KB, free: 530.0 MB)
+18/10/27 01:30:07 INFO storage.BlockManagerInfo: Removed broadcast_0_piece0 on 10.22.254.91:36873 in memory (size: 12.6 KB, free: 530.0 MB)
+18/10/27 01:30:07 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 1466 ms on 10.22.254.91 (1/2)
+18/10/27 01:30:08 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 2016 ms on 10.22.254.84 (2/2)
+18/10/27 01:30:08 INFO scheduler.DAGScheduler: ResultStage 1 (collect at KMeans.scala:17) finished in 2.016 s
+18/10/27 01:30:08 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+18/10/27 01:30:08 INFO scheduler.DAGScheduler: Job 1 finished: collect at KMeans.scala:17, took 2.021809 s
+18/10/27 01:30:08 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 10.22.254.94:37698 in memory (size: 1876.0 B, free: 530.0 MB)
+18/10/27 01:30:08 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 10.22.254.91:36873 in memory (size: 1876.0 B, free: 530.0 MB)
+18/10/27 01:30:08 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 10.22.254.84:43830 in memory (size: 1876.0 B, free: 530.0 MB)
+(15.501285298783515,1.5012085808643838)
+(17.499785818956454,13.498060965514332)
+(11.501121361518551,17.499273923665623)
+(19.497937199806174,17.50101029623605)
+(13.49587562182569,5.500646900437682)
+(13.49254104492672,19.502730870595972)
+(1.5009146322742264,1.4995147551600996)
+(19.500550596061768,5.503514802506535)
+(3.496562336712234,3.494087521728389)
+(15.5026045162466,5.5035124485243045)
+(1.5022749986829225,3.4950945892798395)
+(13.499853922736381,11.505884054950553)
+(1.496582615684956,15.500791162141475)
+(7.500660822156221,9.497080546446414)
+(19.501252968123193,15.501783580033777)
+(3.50452241001775,9.503994716348577)
+(9.498000981655016,1.5075033041842472)
+(15.502723736827912,17.50188035764106)
+(11.498008364910595,13.506120151507599)
+(9.497422583565568,13.500773198208048)
+(1.5031516009055483,5.498050152190068)
+(13.494014465095676,9.50153168165788)
+(5.496537227714157,5.503451684262153)
+(5.499455766546079,9.497144514436595)
+(3.50163694005489,11.497708773235653)
+(3.5013707632210482,1.4933447167211211)
+(9.499088489526878,7.499277199858742)
+(15.50120304097404,11.50050789648708)
+(7.4969134088629215,7.498396305336443)
+(5.498962817457082,3.4976933257205136)
+(19.49859354181935,3.5035978831065826)
+(9.496942663657496,3.5028907068922295)
+(9.505865462618129,17.498029652850057)
+(15.49735541550551,7.503164958584949)
+(7.5029357160460926,15.499349249453306)
+(13.505478725849052,3.5034814925137288)
+(11.4995275967578,11.503068082779096)
+(11.502291605531136,9.502524904567693)
+(13.498998886991554,1.5044315013570702)
+(7.504658085405929,1.499305197219835)
+(9.50100499701273,5.495820029165874)
+(1.50268703066602,19.493009792671806)
+(7.5022912657945815,13.499973380363539)
+(17.498540401637715,17.502052166574263)
+(9.497141046332864,15.501423234339558)
+(5.49577930019772,1.5034065717891025)
+(5.499560336697611,7.5006808649824155)
+(15.495179935515234,9.49731743942792)
+(3.494572800288564,7.501763278010348)
+(5.503557455013126,13.50206843715364)
+(13.50024436389055,13.500377995024506)
+(17.500193623188718,5.505937840424283)
+(7.500317259059325,3.503450839531407)
+(3.497346023779928,15.504334440190384)
+(19.499330348402225,1.504342782523354)
+(13.497915976793577,7.498237867163904)
+(1.500843960115931,13.500033111619587)
+(13.500164079344612,17.50238408220391)
+(9.498637928268911,11.501077777382951)
+(15.49733833301299,19.501597993621587)
+(3.4967225899613665,17.498635616176685)
+(11.501085724261673,1.5049218013160688)
+(7.498532236955424,17.497925449799236)
+(5.4972895506914945,15.501327802376906)
+(7.501506734726209,19.49868969035494)
+(17.49547641103364,7.496281930004823)
+(11.499904485142537,19.50262705531023)
+(15.503859823027605,13.503718865362337)
+(9.502237899661761,19.50252605073558)
+(1.5036058459053603,9.499987565879412)
+(19.498446284711186,9.500111912984382)
+(17.49852036006139,3.5016900433984666)
+(13.504683922955952,15.498213327811982)
+(17.500467171550017,11.497883937998333)
+(19.50046256175546,19.496092879380754)
+(1.5010863138013009,7.495797154561295)
+(15.494037080789608,15.497292008560349)
+(17.505724055668253,15.501996363537325)
+(1.4970156963845285,17.497710357852092)
+(3.5000731474050224,13.498742647867992)
+(7.49965924836203,5.50066518205839)
+(15.498531382040586,3.4965163053790453)
+(11.497434018483423,15.50346956094696)
+(11.502196205178384,7.501270210643721)
+(11.503324725755611,3.4948390734178356)
+(9.502404133381512,9.495425963594668)
+(19.50074883190974,11.500435835726758)
+(5.501494333087944,11.500225958826569)
+(17.49965694317323,9.502699832125883)
+(3.497376512690416,5.501396885877805)
+(17.49888621524543,19.49992863518642)
+(1.5023507670780536,11.50110617790579)
+(19.50082802052945,7.5020355837055765)
+(3.5022639825394553,19.50186290767369)
+(5.498614883122985,19.50204220106778)
+(19.501804064766127,13.5064287724948)
+(7.495022373769748,11.507178363602605)
+(5.500650846217519,17.496112958728393)
+(17.497718445925525,1.4979772902309965)
+(11.501803222441891,5.499523638007421)
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+18/10/27 01:30:11 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+18/10/27 01:30:11 INFO ui.SparkUI: Stopped Spark web UI at http://10.22.254.94:4040
+18/10/27 01:30:11 INFO scheduler.DAGScheduler: Stopping DAGScheduler
+18/10/27 01:30:11 INFO cluster.SparkDeploySchedulerBackend: Shutting down all executors
+18/10/27 01:30:11 INFO cluster.SparkDeploySchedulerBackend: Asking each executor to shut down
+18/10/27 01:30:11 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/10/27 01:30:11 INFO storage.MemoryStore: MemoryStore cleared
+18/10/27 01:30:11 INFO storage.BlockManager: BlockManager stopped
+18/10/27 01:30:11 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+18/10/27 01:30:11 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/10/27 01:30:11 INFO spark.SparkContext: Successfully stopped SparkContext
+18/10/27 01:30:11 INFO util.ShutdownHookManager: Shutdown hook called
+18/10/27 01:30:11 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+18/10/27 01:30:11 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-5fbfa222-50af-4c0e-ad88-ec371496f3e0
+18/10/27 01:30:11 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+18/10/27 01:30:11 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remoting shut down.
+stopping yarn daemons
+stopping resourcemanager
+comet-06-57.ibnet: stopping nodemanager
+comet-06-60.ibnet: stopping nodemanager
+comet-06-67.ibnet: stopping nodemanager
+no proxyserver to stop
+18/10/27 01:30:23 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [comet-06-57.ibnet]
+comet-06-57.ibnet: stopping namenode
+comet-06-57.ibnet: stopping datanode
+comet-06-60.ibnet: stopping datanode
+comet-06-67.ibnet: stopping datanode
+Stopping secondary namenodes [comet-06-57.ibnet]
+comet-06-57.ibnet: stopping secondarynamenode
+18/10/27 01:30:42 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Copying Hadoop logs back to /home/sirohi/cometcluster/logs...
+`/scratch/sirohi/19839730/logs' -> `/home/sirohi/cometcluster/logs'
+`/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.log' -> `/home/sirohi/cometcluster/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.log'
+`/scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.master.Master-1-comet-06-57.out' -> `/home/sirohi/cometcluster/logs/spark-sirohi-org.apache.spark.deploy.master.Master-1-comet-06-57.out'
+`/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.log' -> `/home/sirohi/cometcluster/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.log'
+`/scratch/sirohi/19839730/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.log' -> `/home/sirohi/cometcluster/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.log'
+`/scratch/sirohi/19839730/logs/userlogs' -> `/home/sirohi/cometcluster/logs/userlogs'
+`/scratch/sirohi/19839730/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.out' -> `/home/sirohi/cometcluster/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.out'
+`/scratch/sirohi/19839730/logs/yarn-sirohi-resourcemanager-comet-06-57.log' -> `/home/sirohi/cometcluster/logs/yarn-sirohi-resourcemanager-comet-06-57.log'
+`/scratch/sirohi/19839730/logs/SecurityAuth-sirohi.audit' -> `/home/sirohi/cometcluster/logs/SecurityAuth-sirohi.audit'
+`/scratch/sirohi/19839730/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.log' -> `/home/sirohi/cometcluster/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.log'
+`/scratch/sirohi/19839730/logs/yarn-sirohi-resourcemanager-comet-06-57.out' -> `/home/sirohi/cometcluster/logs/yarn-sirohi-resourcemanager-comet-06-57.out'
+`/scratch/sirohi/19839730/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.out' -> `/home/sirohi/cometcluster/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.out'
+`/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.out' -> `/home/sirohi/cometcluster/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.out'
+`/scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-57.sdsc.edu.out' -> `/home/sirohi/cometcluster/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-57.sdsc.edu.out'
+`/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.out' -> `/home/sirohi/cometcluster/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.out'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/usercache'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/filecache'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch'
+removed directory: `/scratch/sirohi/19839730/tmp/dfs/namesecondary'
+removed directory: `/scratch/sirohi/19839730/tmp/dfs'
+removed directory: `/scratch/sirohi/19839730/tmp'
+removed `/scratch/sirohi/19839730/namenode_data/current/fsimage_0000000000000000000'
+removed `/scratch/sirohi/19839730/namenode_data/current/edits_inprogress_0000000000000000001'
+removed `/scratch/sirohi/19839730/namenode_data/current/seen_txid'
+removed `/scratch/sirohi/19839730/namenode_data/current/fsimage_0000000000000000000.md5'
+removed `/scratch/sirohi/19839730/namenode_data/current/VERSION'
+removed directory: `/scratch/sirohi/19839730/namenode_data/current'
+removed directory: `/scratch/sirohi/19839730/namenode_data'
+removed `/scratch/sirohi/19839730/hdfs_data/current/VERSION'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/dncp_block_verification.log.curr'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/VERSION'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/dfsUsed'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/rbw'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741826'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/tmp'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/dncp_block_verification.log.prev'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current'
+removed directory: `/scratch/sirohi/19839730/hdfs_data'
+removed directory: `/scratch/sirohi/19839730/pids'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.log'
+removed `/scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.master.Master-1-comet-06-57.out'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.log'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.log'
+removed directory: `/scratch/sirohi/19839730/logs/userlogs'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-resourcemanager-comet-06-57.log'
+removed `/scratch/sirohi/19839730/logs/SecurityAuth-sirohi.audit'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-secondarynamenode-comet-06-57.sdsc.edu.log'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-resourcemanager-comet-06-57.out'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-namenode-comet-06-57.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-57.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-57.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-57.sdsc.edu.out'
+removed directory: `/scratch/sirohi/19839730/logs'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/filecache'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/usercache'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch'
+removed `/scratch/sirohi/19839730/hdfs_data/current/VERSION'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/rbw'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/dfsUsed'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/VERSION'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/tmp'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/dncp_block_verification.log.prev'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/dncp_block_verification.log.curr'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current'
+removed directory: `/scratch/sirohi/19839730/hdfs_data'
+removed directory: `/scratch/sirohi/19839730/pids'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-60.sdsc.edu.log'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-60.sdsc.edu.log'
+removed `/scratch/sirohi/19839730/logs/SecurityAuth-sirohi.audit'
+removed `/scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-60.sdsc.edu.out'
+removed directory: `/scratch/sirohi/19839730/logs/userlogs'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-60.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-60.sdsc.edu.out'
+removed directory: `/scratch/sirohi/19839730/logs'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/filecache'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/nmPrivate'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch/usercache'
+removed directory: `/scratch/sirohi/19839730/mapred_scratch'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/tmp'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/dncp_block_verification.log.curr'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized/subdir0'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/finalized'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/VERSION'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/rbw'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current/dfsUsed'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/current'
+removed `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148/dncp_block_verification.log.prev'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current/BP-1130663705-198.202.112.119-1540628967148'
+removed `/scratch/sirohi/19839730/hdfs_data/current/VERSION'
+removed directory: `/scratch/sirohi/19839730/hdfs_data/current'
+removed directory: `/scratch/sirohi/19839730/hdfs_data'
+removed directory: `/scratch/sirohi/19839730/pids'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-67.sdsc.edu.log'
+removed `/scratch/sirohi/19839730/logs/spark-sirohi-org.apache.spark.deploy.worker.Worker-1-comet-06-67.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-67.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/SecurityAuth-sirohi.audit'
+removed directory: `/scratch/sirohi/19839730/logs/userlogs'
+removed `/scratch/sirohi/19839730/logs/hadoop-sirohi-datanode-comet-06-67.sdsc.edu.out'
+removed `/scratch/sirohi/19839730/logs/yarn-sirohi-nodemanager-comet-06-67.sdsc.edu.log'
+removed directory: `/scratch/sirohi/19839730/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_8178559660256770898/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_8178559660256770898/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_8178559660256770898'
+removed directory: `/tmp/Jetty_comet.06.57_ibnet_50090_secondary____kvumb1/jsp'
+removed directory: `/tmp/Jetty_comet.06.57_ibnet_50090_secondary____kvumb1/.active'
+removed directory: `/tmp/Jetty_comet.06.57_ibnet_50090_secondary____kvumb1'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_5696621917999767816/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_5696621917999767816/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_5696621917999767816'

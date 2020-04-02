@@ -1,0 +1,3 @@
+John Smith,cse6331,85
+Mary Jones,cse5335,98
+Helen Smith,cse6331,100

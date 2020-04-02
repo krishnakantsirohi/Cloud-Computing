@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rm -rf multiply.jar classes
+echo "started"
+module load hadoop/2.6.0 spark/1.5.2
+echo "module loaded"
+mkdir -p classes
+echo "directory created"
+/oasis/projects/nsf/uot143/fegaras/scala/bin/scalac -d classes -cp classes:`ls $SPARK_HOME/lib/spark-assembly*.jar` src/main/scala/LastFM.scala
+jar cf LastFM.jar -C classes .
+
+echo "end"
